@@ -1,16 +1,16 @@
-\# Epidemic Forecasting using SIRD and Neural Networks
+# Epidemic Forecasting using SIRD and Neural Networks
 
 
 
-\### Mechanistic Epidemic Modeling, Neural Forecasting, and Robustness Analysis
+### Mechanistic Epidemic Modeling, Neural Forecasting, and Robustness Analysis
 
 
 
-\---
+---
 
 
 
-\## Abstract
+## Abstract
 
 
 
@@ -26,11 +26,11 @@ The project further explores recursive future forecasting and demonstrates how n
 
 
 
-\---
+---
 
 
 
-\## 1. Problem Statement
+## 1. Problem Statement
 
 
 
@@ -38,15 +38,15 @@ Epidemic forecasting systems face several important challenges:
 
 
 
-\* Capturing nonlinear epidemic dynamics accurately
+* Capturing nonlinear epidemic dynamics accurately
 
-\* Maintaining interpretability in forecasting systems
+* Maintaining interpretability in forecasting systems
 
-\* Forecasting future trajectories under uncertainty
+* Forecasting future trajectories under uncertainty
 
-\* Handling noisy and irregular epidemic data
+* Handling noisy and irregular epidemic data
 
-\* Balancing mechanistic modeling with data-driven learning
+* Balancing mechanistic modeling with data-driven learning
 
 
 
@@ -54,7 +54,7 @@ This project addresses these challenges by combining differential equation-based
 
 
 
-\---
+---
 
 
 
@@ -62,31 +62,31 @@ This project addresses these challenges by combining differential equation-based
 
 
 
-\* Develop a classical SIRD epidemic simulation model
+* Develop a classical SIRD epidemic simulation model
 
-\* Analyze parameter sensitivity in epidemic dynamics
+* Analyze parameter sensitivity in epidemic dynamics
 
-\* Generate synthetic epidemic time-series datasets
+* Generate synthetic epidemic time-series datasets
 
-\* Train neural networks for epidemic forecasting
+* Train neural networks for epidemic forecasting
 
-\* Compare mechanistic and data-driven forecasting approaches
+* Compare mechanistic and data-driven forecasting approaches
 
-\* Investigate recursive forecasting behavior
+* Investigate recursive forecasting behavior
 
-\* Evaluate robustness under noisy epidemic conditions
-
-
-
-\---
+* Evaluate robustness under noisy epidemic conditions
 
 
 
-\## 3. Mathematical Background
+---
 
 
 
-\### 3.1 SIRD Model
+## 3. Mathematical Background
+
+
+
+### 3.1 SIRD Model
 
 
 
@@ -112,85 +112,85 @@ where:
 
 
 
-\* \*\*S(t)\*\* = susceptible population
+* \*\*S(t)\*\* = susceptible population
 
-\* \*\*I(t)\*\* = infected population
+* \*\*I(t)\*\* = infected population
 
-\* \*\*R(t)\*\* = recovered population
+* \*\*R(t)\*\* = recovered population
 
-\* \*\*D(t)\*\* = deceased population
+* \*\*D(t)\*\* = deceased population
 
-\* \*\*β\*\* = infection rate
+* \*\*β\*\* = infection rate
 
-\* \*\*γ\*\* = recovery rate
+* \*\*γ\*\* = recovery rate
 
-\* \*\*μ\*\* = mortality rate
+* \*\*μ\*\* = mortality rate
 
-\* \*\*N\*\* = total population
-
-
-
-\---
+* \*\*N\*\* = total population
 
 
 
-\## 4. Methodology
+---
 
 
 
-\### 4.1 Mechanistic Epidemic Modeling
+## 4. Methodology
 
 
 
-\* SIRD compartmental simulation
-
-\* Numerical integration using ODE solvers
-
-\* Epidemic trajectory visualization
+### 4.1 Mechanistic Epidemic Modeling
 
 
 
-\### 4.2 Parameter Sensitivity Analysis
+* SIRD compartmental simulation
+
+* Numerical integration using ODE solvers
+
+* Epidemic trajectory visualization
 
 
 
-\* Infection rate sensitivity
-
-\* Recovery rate sensitivity
-
-\* Mortality rate sensitivity
+### 4.2 Parameter Sensitivity Analysis
 
 
 
-\### 4.3 Neural Forecasting
+* Infection rate sensitivity
+
+* Recovery rate sensitivity
+
+* Mortality rate sensitivity
 
 
 
-\* Sliding-window time-series preparation
-
-\* Feedforward neural network forecasting
-
-\* Recursive future prediction
+### 4.3 Neural Forecasting
 
 
 
-\### 4.4 Robustness Analysis
+* Sliding-window time-series preparation
+
+* Feedforward neural network forecasting
+
+* Recursive future prediction
 
 
 
-\* Artificial noise injection
-
-\* Forecast degradation analysis
-
-\* Uncertainty evaluation
+### 4.4 Robustness Analysis
 
 
 
-\---
+* Artificial noise injection
+
+* Forecast degradation analysis
+
+* Uncertainty evaluation
 
 
 
-\## 5. Synthetic Epidemic Dataset
+---
+
+
+
+## 5. Synthetic Epidemic Dataset
 
 
 
@@ -198,13 +198,13 @@ The SIRD simulation outputs were converted into a structured time-series dataset
 
 
 
-\* Susceptible population
+* Susceptible population
 
-\* Infected population
+* Infected population
 
-\* Recovered population
+* Recovered population
 
-\* Deceased population
+* Deceased population
 
 
 
@@ -212,11 +212,11 @@ This synthetic dataset provides a controlled environment for evaluating forecast
 
 
 
-\---
+---
 
 
 
-\## 6. Neural Network Forecasting
+## 6. Neural Network Forecasting
 
 
 
@@ -224,25 +224,25 @@ A feedforward neural network was trained to predict future infection dynamics us
 
 
 
-\### Forecasting Setup
+### Forecasting Setup
 
 
 
-\* Input window size: 7 days
+* Input window size: 7 days
 
-\* Forecast target: next-day infected population
+* Forecast target: next-day infected population
 
-\* Chronological train-test split
+* Chronological train-test split
 
-\* MinMax normalization applied
-
-
-
-\---
+* MinMax normalization applied
 
 
 
-\## 7. Forecast Evaluation
+---
+
+
+
+## 7. Forecast Evaluation
 
 
 
@@ -250,17 +250,17 @@ The neural network achieved strong forecasting performance on smooth synthetic e
 
 
 
-\### Forecast Metrics
+### Forecast Metrics
 
 
 
-\* Mean Absolute Error (MAE): \*\*124.24\*\*
+* Mean Absolute Error (MAE): \*\*124.24\*\*
 
-\* Mean Squared Error (MSE): \*\*15516.14\*\*
+* Mean Squared Error (MSE): \*\*15516.14\*\*
 
-\* Root Mean Squared Error (RMSE): \*\*124.56\*\*
+* Root Mean Squared Error (RMSE): \*\*124.56\*\*
 
-\* R² Score: \*\*0.8471\*\*
+* R² Score: \*\*0.8471\*\*
 
 
 
@@ -268,11 +268,11 @@ These results indicate that the neural network successfully captured the nonline
 
 
 
-\---
+---
 
 
 
-\## 8. Mechanistic vs Data-Driven Forecasting
+## 8. Mechanistic vs Data-Driven Forecasting
 
 
 
@@ -290,7 +290,7 @@ This project compares two fundamentally different forecasting paradigms:
 
 
 
-\### Key Insight
+### Key Insight
 
 
 
@@ -298,11 +298,11 @@ Mechanistic models provide epidemiological interpretability, while neural networ
 
 
 
-\---
+---
 
 
 
-\## 9. Recursive Forecasting and Drift
+## 9. Recursive Forecasting and Drift
 
 
 
@@ -310,7 +310,7 @@ The neural network was recursively used to forecast future epidemic trajectories
 
 
 
-\### Observation
+### Observation
 
 
 
@@ -322,19 +322,19 @@ This highlights an important limitation of purely data-driven forecasting system
 
 
 
-\* small prediction errors accumulate over time
+* small prediction errors accumulate over time
 
-\* recursive forecasts may become unstable
+* recursive forecasts may become unstable
 
-\* long-term extrapolation becomes increasingly uncertain
-
-
-
-\---
+* long-term extrapolation becomes increasingly uncertain
 
 
 
-\## 10. Noise and Robustness Analysis
+---
+
+
+
+## 10. Noise and Robustness Analysis
 
 
 
@@ -342,15 +342,15 @@ Artificial noise was introduced into the epidemic time series to simulate realis
 
 
 
-\### Key Findings
+### Key Findings
 
 
 
-\* Forecasting performance degraded substantially under noisy conditions
+* Forecasting performance degraded substantially under noisy conditions
 
-\* Neural networks became sensitive to irregular epidemic fluctuations
+* Neural networks became sensitive to irregular epidemic fluctuations
 
-\* The noisy forecasting experiment produced a negative R² score, indicating poor generalization under uncertainty
+* The noisy forecasting experiment produced a negative R² score, indicating poor generalization under uncertainty
 
 
 
@@ -358,149 +358,149 @@ This demonstrates the importance of:
 
 
 
-\* robustness analysis
+* robustness analysis
 
-\* uncertainty quantification
+* uncertainty quantification
 
-\* hybrid mechanistic-ML forecasting systems
+* hybrid mechanistic-ML forecasting systems
 
 
 
-\---
+---
 
 
 
-\## 11. Visual Analysis
+## 11. Visual Analysis
 
 
 
-\### SIRD Epidemic Simulation
+### SIRD Epidemic Simulation
 
 
 
-!\[SIRD Simulation](figures/sird\_simulation.png)
+![SIRD Simulation](figures/sird\_simulation.png)
 
 
 
-\### Infection Rate Sensitivity
+### Infection Rate Sensitivity
 
 
 
-!\[Infection Rate Sensitivity](figures/infection\_rate\_sensitivity.png)
+![Infection Rate Sensitivity](figures/infection\_rate\_sensitivity.png)
 
 
 
-\### Recovery Rate Sensitivity
+### Recovery Rate Sensitivity
 
 
 
-!\[Recovery Rate Sensitivity](figures/recovery\_rate\_sensitivity.png)
+![Recovery Rate Sensitivity](figures/recovery\_rate\_sensitivity.png)
 
 
 
-\### Mortality Rate Sensitivity
+### Mortality Rate Sensitivity
 
 
 
-!\[Mortality Rate Sensitivity](figures/mortality\_rate\_sensitivity.png)
+![Mortality Rate Sensitivity](figures/mortality\_rate\_sensitivity.png)
 
 
 
-\### Neural Forecast
+### Neural Forecast
 
 
 
-!\[Neural Forecast](figures/nn\_forecast.png)
+![Neural Forecast](figures/nn\_forecast.png)
 
 
 
-\### Future Epidemic Forecast
+### Future Epidemic Forecast
 
 
 
-!\[Future Forecast](figures/future\_forecast.png)
+![Future Forecast](figures/future\_forecast.png)
 
 
 
-\### Noisy Forecast Analysis
+### Noisy Forecast Analysis
 
 
 
-!\[Noisy Forecast](figures/noisy\_forecast.png)
+![Noisy Forecast](figures/noisy\_forecast.png)
 
 
 
-\---
+---
 
 
 
-\## 12. Key Insights
+## 12. Key Insights
 
 
 
-\* SIRD models provide interpretable epidemic dynamics
+* SIRD models provide interpretable epidemic dynamics
 
-\* Neural networks effectively learn nonlinear epidemic patterns
+* Neural networks effectively learn nonlinear epidemic patterns
 
-\* Recursive forecasting may accumulate long-term prediction errors
+* Recursive forecasting may accumulate long-term prediction errors
 
-\* Forecasting systems can become unstable under noisy conditions
+* Forecasting systems can become unstable under noisy conditions
 
-\* Mechanistic and machine learning approaches are complementary
+* Mechanistic and machine learning approaches are complementary
 
 
 
-\---
+---
 
 
 
-\## 13. Future Work
+## 13. Future Work
 
 
 
-\* LSTM and recurrent neural forecasting models
+* LSTM and recurrent neural forecasting models
 
-\* Hybrid mechanistic-machine learning systems
+* Hybrid mechanistic-machine learning systems
 
-\* Bayesian epidemic uncertainty quantification
+* Bayesian epidemic uncertainty quantification
 
-\* Real-world COVID-19 or Hantavirus data integration
+* Real-world COVID-19 or Hantavirus data integration
 
-\* Physics-informed neural networks (PINNs)
+* Physics-informed neural networks (PINNs)
 
-\* Spatiotemporal epidemic forecasting
+* Spatiotemporal epidemic forecasting
 
 
 
-\---
+---
 
 
 
-\## 14. Technologies Used
+## 14. Technologies Used
 
 
 
-\* Python
+* Python
 
-\* NumPy \& Pandas
+* NumPy \& Pandas
 
-\* SciPy
+* SciPy
 
-\* Scikit-learn
+* Scikit-learn
 
-\* TensorFlow / Keras
+* TensorFlow / Keras
 
-\* Matplotlib
+* Matplotlib
 
-\* Jupyter Notebook
+* Jupyter Notebook
 
 
 
-\---
+---
 
 
 
-\## 15. Project Structure
+## 15. Project Structure
 
 
 
@@ -528,11 +528,11 @@ Epidemic-Forecasting-SIRD-Neural-Networks/
 
 
 
-\---
+---
 
 
 
-\## 16. Reproducibility
+## 16. Reproducibility
 
 
 
@@ -540,7 +540,7 @@ This project is fully reproducible. Follow the steps below to replicate the expe
 
 
 
-\### 16.1 Clone the repository
+### 16.1 Clone the repository
 
 
 
@@ -554,11 +554,11 @@ cd Epidemic-Forecasting-SIRD-Neural-Networks
 
 
 
-\---
+---
 
 
 
-\### 16.2 Create a virtual environment (recommended)
+### 16.2 Create a virtual environment (recommended)
 
 
 
@@ -572,11 +572,11 @@ conda activate epidemic-forecasting
 
 
 
-\---
+---
 
 
 
-\### 16.3 Install dependencies
+### 16.3 Install dependencies
 
 
 
@@ -588,11 +588,11 @@ pip install -r requirements.txt
 
 
 
-\---
+---
 
 
 
-\### 16.4 Run the project
+### 16.4 Run the project
 
 
 
@@ -612,11 +612,11 @@ Ensure that all datasets are located in the `data/` directory before running the
 
 
 
-\---
+---
 
 
 
-\## 17. Author
+## 17. Author
 
 
 
@@ -628,11 +628,11 @@ Email: \[katsojohnobotsang@gmail.com](mailto:katsojohnobotsang@gmail.com)
 
 
 
-\---
+---
 
 
 
-\## 18. License
+## 18. License
 
 
 
