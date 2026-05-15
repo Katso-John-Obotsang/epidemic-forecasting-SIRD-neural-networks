@@ -47,15 +47,20 @@ This project addresses these challenges by combining differential equation-based
 The epidemic dynamics are governed by the following differential equations:
 
 ```math
-dS/dt = -βSI/N
-
-dI/dt = βSI/N - γI - μI
-
-dR/dt = γI
-
-dD/dt = μI
+\frac{dS}{dt} = -\frac{\beta S I}{N}
 ```
 
+```math
+\frac{dI}{dt} = \frac{\beta S I}{N} - \gamma I - \mu I
+```
+
+```math
+\frac{dR}{dt} = \gamma I
+```
+
+```math
+\frac{dD}{dt} = \mu I
+```
 where:
 
 * **S(t)** = susceptible population
