@@ -275,7 +275,7 @@ This project is fully reproducible. Follow the steps below to replicate the expe
 ### 16.1 Clone the repository
 
 ```bash
-git clone https://github.com/Katso-John-Obotsang/Epidemic-Forecasting-SIRD-Neural-Networks.git
+git clone https://github.com/Katso-John-Obotsang/epidemic-forecasting-SIRD-neural-networks.git
 
 cd Epidemic-Forecasting-SIRD-Neural-Networks
 ```
