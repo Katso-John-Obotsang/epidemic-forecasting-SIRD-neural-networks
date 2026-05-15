@@ -53,7 +53,8 @@ The epidemic dynamics are governed by the following differential equations:
 \frac{dR}{dt} &= \gamma I \\
 \frac{dD}{dt} &= \mu I
 \end{aligned}
-```where:
+```
+where:
 
 * **S(t)** = susceptible population
 * **I(t)** = infected population
